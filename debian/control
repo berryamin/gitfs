@@ -2,8 +2,8 @@ Source: gitfs
 Maintainer: PressLabs <ping@presslabs.com>
 Section: python
 Priority: optional
-Build-Depends: python-setuptools (>= 0.6b3), python-all (>= 2.6.6-3), debhelper (>= 7.4.3),
-    python-fusepy, python-pygit2, python-all-dev
+Build-Depends: python-setuptools (>= 0.6b3), python3-all (>= 3.8.2-0ubuntu2), debhelper (>= 7.4.3),
+    , python3-all-dev
 Standards-Version: 3.9.3
 
 Package: gitfs

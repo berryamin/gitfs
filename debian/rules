@@ -11,7 +11,7 @@ override_dh_auto_clean:
 	find . -name \*.pyc -exec rm {} \;
 
 override_dh_auto_build:
-	python setup.py build --force
+	python2.7 setup.py build --force
 
 override_dh_auto_install:
-	python setup.py install --force --root=debian/gitfs --no-compile -O0 --install-layout=deb  
+	python2.7 setup.py install --force --root=debian/gitfs --no-compile -O0 --install-layout=deb  

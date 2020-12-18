@@ -3,7 +3,7 @@ Maintainer: PressLabs <ping@presslabs.com>
 Section: python
 Priority: optional
 Build-Depends: python-setuptools (>= 0.6b3), python3-all (>= 3.8.2-0ubuntu2), debhelper (>= 7.4.3),
-    , python3-all-dev
+    , python3-all-dev, dh-python, python3-fusepy, python3-pygit2, python3-atomicwrites
 Standards-Version: 3.9.3
 
 Package: gitfs

@@ -1,0 +1,12 @@
+
+
+Some tools and commands used to tweak this package
+
+# install mk-build-deps
+from@ge:~/gitfs$ sudo apt-get install devscripts
+
+# automatically install build dependencies as defined in debian/control
+from@ge:~/gitfs$ mk-build-deps  ; sudo apt-get install ./gitfs-build-deps_0.5.2-focal~ppa2_all.deb ; rm ./gitfs-build-deps_0.5.2-focal~ppa2_all.deb 
+
+# install gbp
+from@ge:~/gitfs$ sudo apt-get install git-buildpackage

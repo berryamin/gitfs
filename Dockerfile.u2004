@@ -16,4 +16,15 @@ RUN if [ "$PYTHON" = "2.7" ] ; then pip install -r /test_requirements.txt; else 
 ADD . /tmp
 WORKDIR /tmp
 #RUN ln -sf /usr/bin/python3.8 build/virtualenv/bin/python
-RUN make 
+#RUN make 
+
+RUN apt-get update && \
+    apt-get install -qy debhelper
+
+RUN apt-get update && \
+    apt-get install -qy python-all, python3-all-dev, dh-python, python3-fusepy, python3-pygit2, python3-atomicwrites, python3-pip, python3-six, python-setuptools
+
+RUN apt-get update && \
+    apt-get install -qy vim
+
+#RUN dpkg-buildpackage

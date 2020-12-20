@@ -1,6 +1,8 @@
 
-
 Some tools and commands used to tweak this package
+
+# build gitfs 0.5.2 docker image for ubuntu 20.04
+docker build -t gitfs:20.04 -t gitfs:0.5.2-u2004 -f Dockerfile.u2004 .
 
 # install mk-build-deps
 from@ge:~/gitfs$ sudo apt-get install devscripts
